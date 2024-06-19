@@ -13,7 +13,7 @@ commands:
     spinner: true
     sync: false
     wait: false
-- description: Run the tests, analyze the output and provide suggestions
+- description: Run unit tests, analyze the output & provide suggestions
   name: test-analysis
   params:
     cheap: false
@@ -27,7 +27,7 @@ commands:
     spinner: true
     sync: false
     wait: true
-- description: Assemble a comprehensive daily report and send it to Slack
+- description: Assemble a comprehensive daily report & send it to Slack
   name: daily-report
   params:
     cheap: false
@@ -41,7 +41,7 @@ commands:
     spinner: true
     sync: false
     wait: true
-- description: Generate PR Title and Description
+- description: Generate PR Title & Description
   name: pr-description
   params:
     cheap: false
@@ -54,4 +54,18 @@ commands:
     snap: false
     spinner: false
     sync: false
+    wait: true
+- description: Organize & clean up cfg files (package.json, pom.xml, etc)
+  name: house-keeping
+  params:
+    cheap: false
+    code: false
+    debug: false
+    direct: false
+    file: prompts/house-keeping.md.jinja2
+    model: gpt-4o
+    quiet: true
+    snap: false
+    spinner: true
+    sync: true
     wait: true
