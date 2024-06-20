@@ -8,10 +8,10 @@ commands:
     direct: false
     model: gpt-3.5-turbo
     prompt: write a haiku about this project
-    quiet: false
     snap: false
     spinner: true
     sync: false
+    verbose: false
     wait: false
 - description: Run unit tests, analyze the output & provide suggestions
   name: test-analysis
@@ -22,10 +22,10 @@ commands:
     direct: false
     file: prompts/analyze-test-results.md.jinja2
     model: gpt-4o
-    quiet: true
     snap: false
     spinner: true
     sync: false
+    verbose: false
     wait: true
 - description: Assemble a comprehensive daily report & send it to Slack
   name: daily-report
@@ -36,10 +36,10 @@ commands:
     direct: false
     file: prompts/slack-report.md.jinja2
     model: gpt-4o
-    quiet: false
     snap: false
     spinner: true
     sync: false
+    verbose: false
     wait: true
 - description: Generate PR Title & Description
   name: pr-description
@@ -50,10 +50,10 @@ commands:
     direct: false
     file: prompts/generate-pr-description.md.jinja2
     model: gpt-4o
-    quiet: true
     snap: false
     spinner: false
     sync: false
+    verbose: false
     wait: true
 - description: Organize & clean up cfg files (package.json, pom.xml, etc)
   name: house-keeping
@@ -64,8 +64,22 @@ commands:
     direct: false
     file: prompts/house-keeping.md.jinja2
     model: gpt-4o
-    quiet: true
     snap: false
     spinner: true
     sync: true
+    verbose: false
+    wait: true
+- description: Generate badges for your README file
+  name: readme-badges
+  params:
+    cheap: false
+    code: false
+    debug: false
+    direct: false
+    file: prompts/add-readme-badges.md.jinja2
+    model: gpt-4o
+    snap: false
+    spinner: true
+    sync: false
+    verbose: false
     wait: true
