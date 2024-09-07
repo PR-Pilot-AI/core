@@ -1,18 +1,4 @@
 commands:
-- description: Writes a Haiku about your project
-  name: haiku
-  params:
-    cheap: true
-    code: false
-    debug: false
-    direct: false
-    model: gpt-3.5-turbo
-    prompt: write a haiku about this project
-    snap: false
-    spinner: true
-    sync: false
-    verbose: false
-    wait: false
 - description: Run unit tests, analyze the output & provide suggestions
   name: test-analysis
   params:
@@ -51,9 +37,9 @@ commands:
     file: prompts/generate-pr-description.md.jinja2
     model: gpt-4o
     snap: false
-    spinner: false
+    spinner: true
     sync: false
-    verbose: false
+    verbose: true
     wait: true
 - description: Organize & clean up cfg files (package.json, pom.xml, etc)
   name: house-keeping
