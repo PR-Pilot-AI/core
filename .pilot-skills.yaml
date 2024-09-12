@@ -1,0 +1,60 @@
+# Find Sentry error with the most events
+- title: Investigate latest Sentry error
+  args:
+      optional_search_criteria: Optional search criteria
+  instructions: |
+    Investigate a Sentry error by doing the following:
+    1. List all open Sentry issues
+    2. Find the issue that best matches the given description
+    3. Read the three most recent events for the issue
+    4. Write a concise description of the error and relevant technical details (e.g. stack trace)
+  result: A concise description of the error and relevant technical details
+
+# Write a comprehensive bug report, gather information and notify the QA team
+- title: Report a bug
+  args:
+    description: Description of the bug
+    steps_to_reproduce: Steps to reproduce the bug
+    observed_behavior: Observed behavior of the bug
+    expected_behavior: Expected behavior of the bug
+    relevant_files: Relevant files to the bug
+  instructions: |
+    Report a bug by doing the following:
+    1. Read the relevant files to understand the bug
+    2. Create a new issue on Github with the following details:
+      - The given description
+      - Steps to reproduce the bug
+      - Observed behavior and expected behavior
+      - Technical details based on what you found in the files
+    3. Post a notification in the #qa-team Slack channel with a link to the issue
+  result: Links to the Github issue and the Slack message
+
+# Find an error on Sentry and gather technical information
+- title: Find and investigate error on Sentry
+  args:
+    error_to_find: Description of the error
+  instructions: |
+    Investigate an error on Sentry by doing the following:
+    1. List all open Sentry issues
+    2. Find the issue that best matches the given description
+    3. Read the three most recent events for the issue and collect technical details (stack trace, etc)
+    4. Find and read the relevant code files to understand the context of the error
+    5. Write a concise description of the error and relevant technical details
+    IMPORTANT: Do NOT attempt to fix or report the error, only gather information and respond.
+  result: A concise description of the error and relevant technical details
+
+- title: Make a beautiful HTML page
+  args:
+    content: Content of the page
+    purpose: What the page does
+    file_path: Path into which the page will be saved
+  instructions: |
+    1. Search the internet for the latest BulmaCSS CDN version
+    2. Generate a self-contained HTML page that combines the given content with BulmaCSS
+    3. Write the HTML page to the given file path
+    
+    When generating the page, follow these rules:
+    - Use the latest BulmaCSS version
+    - Organize the content in a visually appealing way using Bulma components
+    - Use FA icons and emojis to make the page more engaging
+    - Make full use of Bulma CSS classes to style the page
