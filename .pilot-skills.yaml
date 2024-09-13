@@ -1,15 +1,3 @@
-# Find Sentry error with the most events
-- title: Investigate latest Sentry error
-  args:
-      optional_search_criteria: Optional search criteria
-  instructions: |
-    Investigate a Sentry error by doing the following:
-    1. List all open Sentry issues
-    2. Find the issue that best matches the given description
-    3. Read the three most recent events for the issue
-    4. Write a concise description of the error and relevant technical details (e.g. stack trace)
-  result: A concise description of the error and relevant technical details
-
 # Write a comprehensive bug report, gather information and notify the QA team
 - title: Report a bug
   args:
@@ -20,6 +8,7 @@
     relevant_files: Relevant files to the bug
   instructions: |
     Report a bug by doing the following:
+    
     1. Read the relevant files to understand the bug
     2. Create a new issue on Github with the following details:
       - The given description
@@ -29,21 +18,7 @@
     3. Post a notification in the #qa-team Slack channel with a link to the issue
   result: Links to the Github issue and the Slack message
 
-# Find an error on Sentry and gather technical information
-- title: Find and investigate error on Sentry
-  args:
-    error_to_find: Description of the error
-  instructions: |
-    Investigate an error on Sentry by doing the following:
-    1. List all open Sentry issues
-    2. Find the issue that best matches the given description
-    3. Read the three most recent events for the issue and collect technical details (stack trace, etc)
-    4. Find and read the relevant code files to understand the context of the error
-    5. Write a concise description of the error and relevant technical details
-    IMPORTANT: Do NOT attempt to fix or report the error, only gather information and respond.
-  result: A concise description of the error and relevant technical details
-
-- title: Make a beautiful HTML page
+- title: Generate a beautiful HTML page
   args:
     content: Content of the page
     purpose: What the page does
@@ -54,7 +29,31 @@
     3. Write the HTML page to the given file path
     
     When generating the page, follow these rules:
+    
     - Use the latest BulmaCSS version
     - Organize the content in a visually appealing way using Bulma components
     - Use FA icons and emojis to make the page more engaging
     - Make full use of Bulma CSS classes to style the page
+
+- title: Gather project information from a directory
+  args:
+    directory: Path to the directory
+  instructions: |
+    We want to know more about this project, in particular one directory. The kind of info we are looking for includes:
+     
+    - Programming languages used
+    - Usage of specific frameworks or libraries
+    - Project structure and organization
+    - Relevance of the directory in the context of the project
+    
+    Gather the information by doing the following:
+    
+    1. List all files in the given directory
+    2. Read one or two files that could provide more information
+    3. From the data you collected, deduce the information we are looking for
+
+  result: |
+    A concise list of bullet points, each containing a piece of information about the project. Examples:
+    - Directory seems to contain a Django app
+    - Dependency file `requirements.txt` with Django and requests
+    - `src` directory contains the main project code
