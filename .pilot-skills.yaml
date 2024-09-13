@@ -53,9 +53,9 @@
     3. From the data you collected, deduce the information we are looking for
 
   result: |
-    A concise list of bullet points, each containing a piece of information about the project. Examples:
-    - Directory seems to contain a Django app
-    - Dependency file `requirements.txt` with Django and requests
+    A concise list of compact bullet points, each containing a piece of information about the project. Examples:
+    - Directory contains Django app
+    - Dependencies in `requirements.txt`
     - `src` directory contains the main project code
 
 - title: Write a new knowledge file
@@ -63,27 +63,30 @@
     tech_stack: Ultra-short description of the tech stack
     project_structure: ASCII representation of the project structure with short explanations
     build_and_run: How the project is built and run
-    deployment: How the project is deployed
     testing: How the project is tested
-    domain_model: Main entities/concepts in the project and a Mermaid diagram
+    additional_info: Anything else that is important
   instructions: |
-    We want to write a new knowledge file in the following format:
+    We want to write a new knowledge file. The purpose of this file is to provide an entry point 
+    when looking for information about the project.
     
+    Template:
     ```markdown
     # <project name>
     Project <name> is a <what is it> that solves <problem> for <persona> by <how it does it>.
     
-    ## Tech Stack
-    <tech stack description in concise bullet points>
+    ## Project Structure
+    <ASCII representation of the project structure with short explanations>
     
-    ## section 1
+    ## <section header>
     <3-4 concise bullet points>
     
-    ## section  n
     ...
     ```
     
-    Write a new knowledge file for the project by doing the following:
+    Use the template and write a new knowledge file for the project by doing the following:
     
-    1. Use the provided information to create a knowledge file, following the template
-    2. Write the file into `.pilot-hints.md` in the project root directory
+    1. Break down the information into 4-6 sections
+    2. Write each section with a 1-2 word header and 3-4 concise bullet points
+    3. Use ASCII art to represent the project structure
+    4. Write the file into `.pilot-hints.md` in the project root directory
+  result: Only say "Now I know more about the project"
