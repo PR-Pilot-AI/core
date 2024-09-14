@@ -15,7 +15,7 @@
     - Use FA icons and emojis to make the page more engaging
     - Make full use of Bulma CSS classes to style the page
 
-- title: Gather project information Gather information about project
+- title: Gather information about project
   args:
     directory: Path to the directory
   instructions: |
