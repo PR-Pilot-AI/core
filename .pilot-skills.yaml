@@ -24,7 +24,7 @@
     - Programming languages used
     - Usage of specific frameworks or libraries
     - Project structure and organization
-    - Relevance of the directory in the context of the project
+    - Important files in the root dir and their relevance within the project
     
     Gather the information by doing the following:
     
@@ -43,6 +43,16 @@
     - Deployments and automation via Github actions
     - `tox.ini` for running tests with Pytest
     - ...
+
+- title: Discover modules and domain model
+  args:
+    code_entrypoints: Pointers to files or directories to be used for discovery
+    programming_language: Which language is the code written in
+  instructions: |
+    We want to better understand the overall structure of the code and what it tells us about the domain model:
+    
+    1. Use the code entrypoints to read relevant files and directories
+    
 
 - title: Initialize the project
   args:
