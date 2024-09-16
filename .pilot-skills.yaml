@@ -146,6 +146,6 @@
     ## Contributing
     <contributing>
     ```
-  result: |
-    Confirmation that the README.md file was generated and saved successfully.
-    Insist that no further action is required.
+    
+    IMPORTANT: DO NOT write anything to file.
+  result: Return ONLY the Markdown code for the README file
