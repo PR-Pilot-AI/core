@@ -103,3 +103,46 @@
     2. Change the code to achieve the expected result
     3. Update the existing files and if required, create new files
     
+- title: Generate a beautiful README file
+  args:
+    project_name: Name of the project
+    project_description: Description of the project
+    project_badges: List of badges to include
+    project_structure: Concise, detailed overview of project structure
+    project_tech_stack: List of technologies used
+    project_installation: How to install the project
+    project_usage: How to use the project
+    project_contributing: How to contribute to the project
+  instructions: |
+    I want you to generate a beautiful README file for the project:
+    
+    1. Use the template below to structure the README file
+    2. Fill in the template with the provided information using the guidelines below
+    
+    Guidelines:
+    - Highlight important key phrases in bold so I can get the gist when skim-reading
+    - Use concise, clear language to explain each section
+    - Add an emoji to the beginning of each header to make it visually appealing
+    - Throughout the document, use emojis to make it more engaging / easier to read
+    
+    Template:
+    ```markdown
+    # <project name>
+    <badges>
+    <project description>
+    
+    ## Project Structure
+    <ASCII representation of the project structure>
+    
+    ## Tech Stack
+    <tech stack>
+    
+    ## Installation
+    <installation>
+    
+    ## Usage
+    <usage>
+    
+    ## Contributing
+    <contributing>
+    ```
